@@ -1,6 +1,5 @@
 
 :root{--bg:#0d080b;--accent:#ec445b;--accent-rgb:236,68,91;--surface:#180d12;--surface-raised:#29131c;--edge:#57303b;--wash:#3c101d;--ink:#f6eef0;--subtle:#bfabb2}
-
 body{color:var(--ink);background:radial-gradient(ellipse at 95% 0,var(--wash),transparent 55%),var(--bg);--text:var(--ink);--muted:var(--subtle)}
 .topbar{background:var(--bg);border-color:var(--edge)}
 .nav-btn{color:var(--subtle)}
