@@ -337,3 +337,5 @@ html{scrollbar-gutter:stable}.profile-form-tab{font-synthesis:none}.rc-stats-not
 
 .tier-characters{gap:12px}.database-grid{gap:13px}.reroll-useful-portraits{gap:18px 16px}@media(max-width:620px){.tier-characters{gap:10px}.database-grid{gap:11px}.reroll-useful-portraits{gap:16px}}
 
+
+.profile-form-option{display:flex;flex-direction:column;align-items:center;gap:4px}.profile-form-preview{font-size:10px;font-weight:700;letter-spacing:.5px;color:#e6c77f;line-height:1.2}.profile-form-tabs{align-items:flex-start}
