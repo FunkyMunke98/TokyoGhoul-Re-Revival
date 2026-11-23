@@ -314,3 +314,9 @@ a.brand:focus-visible{outline:2px solid #ffb1c0;outline-offset:4px;border-radius
 .reroll-useful-block{grid-template-columns:280px minmax(0,1fr);gap:24px}.reroll-useful-portraits{display:flex;flex-wrap:wrap;justify-content:center;align-content:flex-start;gap:14px 12px;padding-top:8px}.reroll-useful-portraits .character-card{flex:none}.reroll-shared-copy p+p{margin-top:12px}@media(max-width:760px){.reroll-useful-block{grid-template-columns:140px minmax(0,1fr);gap:18px}}@media(max-width:620px){.reroll-useful-block{grid-template-columns:100px minmax(0,1fr);gap:14px}.reroll-useful-portraits{gap:12px;padding-top:2px}.reroll-shared-copy p{font-size:13px;line-height:1.65}}
 
 .reroll-group-heading.potential-targets-heading{border-color:#526473;background:linear-gradient(100deg,#1c2a34,#151d26);color:#bbd0e2}
+
+.reroll-recommended-banner{max-width:680px;margin:18px auto 24px;padding:16px;text-align:center;border:1px solid #8c4168;border-radius:14px;background:linear-gradient(135deg,rgba(93,24,58,.3),rgba(57,25,81,.28));box-shadow:0 0 20px rgba(157,39,101,.1)}.reroll-recommended-banner h3{margin:0 0 12px;font-size:17px;color:#f4d899}.reroll-recommended-banner img{display:block;width:100%;height:auto;border-radius:7px}.reroll-banner-deadline{margin:10px 0 0;font-size:12px;color:#c9b9c4}@media(max-width:620px){.reroll-recommended-banner{padding:10px;margin:14px auto 20px}.reroll-recommended-banner h3{font-size:15px}}
+
+.reroll-banner-description{margin:12px 0 0;font-size:14px;line-height:1.65;color:#e1d4de}
+
+.reroll-mastery-target{display:block;width:128px;margin-top:9px;text-align:center;color:#f1cd85;font-size:13px;font-weight:700;line-height:1.4}@media(max-width:620px){.reroll-mastery-target{width:100px;font-size:12px}}
