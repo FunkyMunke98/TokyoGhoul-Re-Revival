@@ -345,3 +345,51 @@ html{scrollbar-gutter:stable}.profile-form-tab{font-synthesis:none}.rc-stats-not
 .character-card.movable-card{overflow:visible}.movable-card .card-art{overflow:hidden;border-radius:inherit}
 
 .personal-ranking-share{padding:8px 13px;border:1px solid #a36982;border-radius:9px;background:#382030;color:#f4e7ef;font:inherit;cursor:pointer}.shared-ranking-controls{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}.ranking-share-dialog{width:min(92vw,520px)}.ranking-share-dialog h3{margin-top:0}.ranking-share-dialog p{font-size:14px;line-height:1.6;color:#d4becd}.ranking-share-link{box-sizing:border-box;display:block;width:100%;margin:12px 0;padding:11px;border:1px solid #815369;border-radius:8px;background:#130d15;color:#f0d9e6;font:13px monospace}.ranking-share-status{display:block;margin-top:10px;color:#dfc491;min-height:1.4em}
+
+.character-card.festival-card{border-color:#ad68d1;box-shadow:0 0 5px #a33de455,0 0 12px #8426bd33}
+.character-card.festival-card:hover,.character-card.festival-card:focus-visible{border-color:#da9aff;box-shadow:0 0 7px #b454ef88,0 0 17px #8e36c84d}
+.character-card.festival-card.selected{border-color:#dfacff;box-shadow:0 0 8px #b454ef99,0 0 18px #8e36c855}
+
+.acquisition-filters{order:2;flex:0 0 100%;display:flex;justify-content:center;flex-wrap:wrap;gap:8px;margin-top:2px}
+.acquisition-filter{min-height:36px;padding:6px 14px;border:1px solid #57303b;border-radius:9px;background:#180d12;color:#bfabb2;font:inherit;font-size:12px;cursor:pointer;transition:border-color .15s,background .15s,box-shadow .15s}
+.acquisition-filter:hover{border-color:#a4586c;color:#fff}
+.acquisition-filter[aria-pressed="true"]{border-color:#ec445b;background:#35131f;color:#fff;box-shadow:0 0 9px #ec445b22}
+.acquisition-festival[aria-pressed="true"]{border-color:#ad68d1;background:#2b153b;box-shadow:0 0 10px #a33de444}
+.acquisition-special[aria-pressed="true"]{border-color:#d6ad61;background:#322518;box-shadow:0 0 10px #d6ad6122}
+.acquisition-filter:focus-visible{outline:2px solid #ffb1c0;outline-offset:3px}
+@media(max-width:620px){.acquisition-filters{gap:6px}.acquisition-filter{min-height:40px;padding:6px 11px}}
+
+:is(.acquisition-festival,.acquisition-special) .category-lettering,.chips :is(.category-festival,.category-special) .category-lettering{display:inline-block;font-family:Georgia,"Times New Roman",serif;font-weight:700;font-style:italic;letter-spacing:.45px;line-height:1.25}
+:is(.acquisition-festival,.acquisition-special) .category-lettering{font-size:16px}
+.chips :is(.category-festival,.category-special) .category-lettering{font-size:14px}
+.acquisition-festival .category-lettering,.category-festival .category-lettering{color:#dba0ff;filter:drop-shadow(0 0 4px #b955f24d)}
+.acquisition-special .category-lettering,.category-special .category-lettering{color:#f1cd78;filter:drop-shadow(0 0 4px #e6aa3940)}
+.acquisition-festival{border-color:#74428c;background:linear-gradient(135deg,#211029,#1a101d)}
+.acquisition-special{border-color:#796037;background:linear-gradient(135deg,#281e10,#1b1410)}
+@supports(background-clip:text){
+.acquisition-festival .category-lettering,.category-festival .category-lettering{background:linear-gradient(110deg,#a966e4 0%,#dd9dff 22%,#fff0ff 39%,#dc8be9 49%,#b578f5 66%,#efd3ff 83%,#a966e4 100%);background-size:240% 100%;background-clip:text;-webkit-background-clip:text;color:transparent;animation:category-lettering-shimmer 8s ease-in-out infinite}
+.acquisition-special .category-lettering,.category-special .category-lettering{background:linear-gradient(110deg,#c38b36 0%,#f3cb70 24%,#fff5ca 40%,#e9b955 53%,#d1993b 69%,#ffdf8f 84%,#c38b36 100%);background-size:240% 100%;background-clip:text;-webkit-background-clip:text;color:transparent;animation:category-lettering-shimmer 10s ease-in-out infinite}
+}
+@keyframes category-lettering-shimmer{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@media(prefers-reduced-motion:reduce){.category-lettering{animation:none!important}}
+
+.acquisition-b-day{border-color:#3e7858;background:linear-gradient(135deg,#11271b,#111c15)}
+.acquisition-b-day .category-lettering,.chips .category-bday .category-lettering{display:inline-block;font-family:Georgia,"Times New Roman",serif;font-weight:700;font-style:italic;letter-spacing:.45px;line-height:1.25;color:#9fe8b1;filter:drop-shadow(0 0 4px #4cce7840)}
+.acquisition-b-day .category-lettering{font-size:16px}
+.chips .category-bday .category-lettering{font-size:14px}
+.acquisition-b-day[aria-pressed="true"]{border-color:#78d49a;background:#153322;box-shadow:0 0 10px #4cce7833}
+@supports(background-clip:text){.acquisition-b-day .category-lettering,.category-bday .category-lettering{background:linear-gradient(110deg,#56b67c 0%,#a2edb2 24%,#efffdc 40%,#8edca6 53%,#56b67c 69%,#c9ffd4 84%,#56b67c 100%);background-size:240% 100%;background-clip:text;-webkit-background-clip:text;color:transparent;animation:category-lettering-shimmer 9s ease-in-out infinite}}
+@media(prefers-reduced-motion:reduce){.acquisition-b-day .category-lettering,.category-bday .category-lettering{animation:none}}
+
+:is(.acquisition-free,.acquisition-premium) .category-lettering{display:inline-block;font-family:Georgia,"Times New Roman",serif;font-size:16px;font-weight:700;font-style:italic;letter-spacing:.45px;line-height:1.25;color:#e2dce0}
+.element-filter{font-weight:700}
+
+.chips :is(.category-free,.category-premium){border-color:#66525d;background:#24191f;color:#e2dce0}
+.chips :is(.category-free,.category-premium) .category-lettering{display:inline-block;font-family:Georgia,"Times New Roman",serif;font-size:14px;font-weight:700;font-style:italic;letter-spacing:.45px;line-height:1.25;color:#e2dce0}
+
+.character-card.special-card{border-color:#c5a05a;box-shadow:0 0 5px #d3a34355,0 0 12px #ac792b33}
+.character-card.special-card:hover,.character-card.special-card:focus-visible{border-color:#ffe2a0;box-shadow:0 0 7px #edc36d88,0 0 17px #c58d344d}
+.character-card.special-card.selected{border-color:#ffe9b6;box-shadow:0 0 8px #edc36d99,0 0 18px #c58d3455}
+.character-card.bday-card{border-color:#65b987;box-shadow:0 0 5px #4cc48155,0 0 12px #24885233}
+.character-card.bday-card:hover,.character-card.bday-card:focus-visible{border-color:#b3f5ca;box-shadow:0 0 7px #69db9a88,0 0 17px #32a7674d}
+.character-card.bday-card.selected{border-color:#cdffdd;box-shadow:0 0 8px #69db9a99,0 0 18px #32a76755}
