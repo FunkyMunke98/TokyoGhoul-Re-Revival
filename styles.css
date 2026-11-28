@@ -393,3 +393,5 @@ html{scrollbar-gutter:stable}.profile-form-tab{font-synthesis:none}.rc-stats-not
 .character-card.bday-card{border-color:#65b987;box-shadow:0 0 5px #4cc48155,0 0 12px #24885233}
 .character-card.bday-card:hover,.character-card.bday-card:focus-visible{border-color:#b3f5ca;box-shadow:0 0 7px #69db9a88,0 0 17px #32a7674d}
 .character-card.bday-card.selected{border-color:#cdffdd;box-shadow:0 0 8px #69db9a99,0 0 18px #32a76755}
+
+.unit-profile .skill-ap-example{margin:12px 0 0;text-align:center;font-size:12px;font-weight:400;font-style:italic;line-height:1.5;color:#c5b6c0}
